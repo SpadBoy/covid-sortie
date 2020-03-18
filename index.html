@@ -11,7 +11,7 @@
     html { width: 100%; text-size-adjust: none; }
 
     body {
-        width: 210mm;
+        width: auto;
         margin: 1em auto;
         font-family: Verdana, Geneva, sans-serif;
         background-color: #FFEA23;
@@ -22,7 +22,7 @@
     canvas {border-radius: 8px;}
 
     #page {
-        border: 1px solid black;
+        border: 2px solid dotted;
         padding: 1em;
     }
 
@@ -58,11 +58,17 @@
         body {margin: 0;}
         #page {padding: 0; border: 0;}
     }
+    @media screen and (min-width:768px) {
+
+    .conteneur{
+        max-width: 720px;
+    }
+}
 
 
 </style>
 
-<div id='page'>
+<div id='page' class="conteneur">
 
 <center><h1>ATTESTATION POUR LES TRIATHLÈTES DU DLBT</h1></center>
 
